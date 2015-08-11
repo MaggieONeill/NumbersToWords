@@ -10,4 +10,11 @@ public class NumbersToWordsTest {
     assertEquals(expected, App.numToWords(1));
   }
 
+
+  @Test
+  public void numToWords_returnStringForDoubleDigit_Twelve() {
+    String expected = "twelve";
+    assertEquals(expected, App.numToWords(12));
+  }
+
 }
