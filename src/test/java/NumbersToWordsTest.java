@@ -17,4 +17,9 @@ public class NumbersToWordsTest {
     assertEquals(expected, App.numToWords(12));
   }
 
+  @Test
+  public void numToWords_returnStringForDoubleDigitOverTwenty_TwentyOne(){
+    String expected ="twentyone";
+    assertEquals(expected, App.numToWords(21));
+  }
 }
